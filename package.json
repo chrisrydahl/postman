@@ -1,17 +1,19 @@
 {
-  "name": "postman",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@chrisrydahl/postman",
+  "version": "0.0.1",
+  "private": false,
   "description": "TypeScript template action",
   "main": "lib/main.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "tsc",
     "format": "prettier --write '**/*.ts'",
     "format-check": "prettier --check '**/*.ts'",
     "lint": "eslint src/**/*.ts",
     "package": "ncc build --source-map --license licenses.txt",
     "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
+    "all": "pnpm build && pnpm format && pnpm lint && pnpm package && pnpm test",
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && pnpm build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "octokit": "^2.0.10"
   },
   "devDependencies": {
+    "@jest/globals": "^29.6.1",
     "@types/node": "^18.11.0",
     "@typescript-eslint/parser": "^4.33.0",
     "@vercel/ncc": "^0.31.1",

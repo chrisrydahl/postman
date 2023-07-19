@@ -1,6 +1,6 @@
 name: 'Postman'
 description: 'This actions allow us to sync postman collection with swagger'
-author: 'Chris Hublo'
+author: 'Chris'
 inputs:
   postman-api-key:
     required: true

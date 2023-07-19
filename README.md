@@ -13,19 +13,19 @@ Click the `Use this Template` and provide the new repo details for your action
 Install the dependencies
 
 ```bash
-$ npm install
+$ pnpm i
 ```
 
 Build the typescript and package it for distribution
 
 ```bash
-$ npm run build && npm run package
+$ pnpm build && pnpm package
 ```
 
 Run the tests :heavy_check_mark:
 
 ```bash
-$ npm test
+$ pnpm test
 
  PASS  ./index.test.js
   ✓ throws invalid number (3ms)
@@ -72,9 +72,9 @@ Actions are run from GitHub repos so we will checkin the packed dist folder.
 Then run [ncc](https://github.com/zeit/ncc) and push the results:
 
 ```bash
-$ npm install
-$ npm run build && npm run package
-$ npm run package
+$ pnpm install
+$ pnpm build && pnpm package
+$ pnpm package
 $ git add dist
 $ git commit -a -m "prod dependencies"
 $ git push origin releases/v1
