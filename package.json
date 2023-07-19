@@ -12,8 +12,7 @@
     "lint": "eslint src/**/*.ts",
     "package": "ncc build --source-map --license licenses.txt",
     "test": "jest",
-    "all": "pnpm build && pnpm format && pnpm lint && pnpm package && pnpm test",
-    "pub": "git add . && git commit -m \"Updates\" && npm version patch && pnpm build && npm publish"
+    "all": "git add . && git commit -m \"Updates\" && npm version patch && pnpm build && pnpm format && pnpm lint && pnpm package && pnpm test"
   },
   "repository": {
     "type": "git",
