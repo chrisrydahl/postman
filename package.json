@@ -1,7 +1,7 @@
 {
   "name": "@chrisrydahl/postman",
   "version": "0.0.2",
-  "private": false,
+  "private": true,
   "description": "TypeScript template action",
   "main": "lib/main.js",
   "scripts": {

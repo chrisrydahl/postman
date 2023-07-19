@@ -1,4 +1,4 @@
-name: 'Postman'
+name: '@chrisrydahl/postman'
 description: 'This actions allow us to sync postman collection with swagger'
 author: 'Chris'
 inputs:
