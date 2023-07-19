@@ -2,7 +2,7 @@
   "name": "@chrisrydahl/postman",
   "version": "0.0.4",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "This package is used to update a postman collection with the latest version of a github repository.",
   "main": "lib/main.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/chrisrydahl/postman.git"
   },
   "keywords": [
     "actions",
